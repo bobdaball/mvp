@@ -1,0 +1,43 @@
+{
+  "name": "shopping-list-mvp",
+  "version": "1.0.0",
+  "description": "basic shopping list",
+  "main": "baseLine.js",
+  "dependencies": {
+    "Promise": "^1.0.5",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "mongoose": "^4.13.1",
+    "mongoose-auto-increment": "^5.0.1",
+    "promise": "^8.0.1",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "request": "^2.83.0",
+    "uniq": "^1.0.1"
+  },
+  "scripts": {
+    "start": "nodemon --ignore node_modules baseLine.js",
+    "trans": "babel . --out-dir public --presets=es2015,react --ignore=node_modules,public,server,db,dropall.js --source-maps inline",
+    "start:es6": "nodemon --exec babel-node --ignore node_modules baseLine.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobdaball/mvp.git"
+  },
+  "author": "Alexander Mire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobdaball/mvp/issues"
+  },
+  "homepage": "https://github.com/bobdaball/mvp#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-watch": "^2.0.7"
+  }
+}
